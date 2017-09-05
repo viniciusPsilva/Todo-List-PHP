@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine on
+
+#Condição para deixar css, js passar
+RewriteCond %{REQUEST_FILENAME} !\.(css|js|png|jpeg|jpg|gif|dat)$
+RewriteRule ^(.*)$ app/controller/Bootstrap.php [NC,L]

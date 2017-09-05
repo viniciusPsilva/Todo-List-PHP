@@ -1,0 +1,16 @@
+.erro-Alert{
+    margin-left: 45px;
+    color: Red;
+   font-family: Arial;
+   border: 1px solid red;
+   padding: 5px;
+   border-radius: 5px;
+}
+.fadeIn {
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+}
+
+
