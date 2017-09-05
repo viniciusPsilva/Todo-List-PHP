@@ -60,6 +60,34 @@ class TesteController extends Controller {
 
        // $daoUsuario->alterarSenha($usuario);
     }
+    
+    public function testeTodoList(){
+        require_once '../../app/model/TodoList.php';
+        require_once '../../app/dao/DaoTodoList.php';
+        
+        $todo =  new model\TodoList();
+        $todo->setId(2);
+        $todo->setTitulo("Teste Alterado");
+        $todo->setDescrição("Descricao Teste Alterado");
+        $todo->setImagem("img teste alterado");
+        $todo->setIdUsuario(2);
+        
+        $dao = new DaoTodoList();
+        //$dao->inserir($todo);
+       // $dao->alterar($todo);
+        
+        echo 'Passou no Deletar'.'<br/>';
+        /*
+          $listTodo = $dao->listar(2);
+          foreach ($listTodo as $t){
+              echo "id: $t[0]  Titulo : $t[1]"."<br/>";
+          }
+          */
+            $dao->deletar(3);
+        
+        die();
+        
+    }
 
     public function getRoutes() {
         return [

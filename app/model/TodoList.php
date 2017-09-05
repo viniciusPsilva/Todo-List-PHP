@@ -18,7 +18,9 @@ class TodoList {
     private $titulo;
     private $descrição;
     private $imagem;
-    
+    private $idUsuario;
+
+
     public function getId() {
         return $this->id;
     }
@@ -50,6 +52,14 @@ class TodoList {
 
     public function setImagem($imagem) {
         $this->imagem = $imagem;
+    }
+
+    public function getIdUsuario() {
+        return $this->idUsuario;
+    }
+
+    public function setIdUsuario($idUsuario) {
+        $this->idUsuario = $idUsuario;
     }
 
 
